@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/FontStyle"
+        android:text="Login Page"
+        android:textAlignment="center"
+        />
+
+    <View
+        android:id="@+id/Images"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="@drawable/images"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/editTextEmail"
+        android:layout_below="@id/Images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:drawablePadding="10dp"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/editTextPassword"
+        android:layout_below="@id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawablePadding="10dp"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnLogin"
+        android:layout_below="@id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Login"
+        android:padding="12dp"
+        android:backgroundTint="@color/biruMuda"
+        android:textColor="@color/white"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnSignUP"
+        android:layout_below="@id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Sign UP"
+        android:padding="12dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
